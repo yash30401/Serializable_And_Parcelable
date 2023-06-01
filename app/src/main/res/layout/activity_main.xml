@@ -7,12 +7,37 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="Click on button to send the Data."
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sendDataSerializable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Send Data Using Serializable"
+        app:layout_constraintEnd_toEndOf="@+id/tv_welcomeText"
+        app:layout_constraintStart_toStartOf="@+id/tv_welcomeText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcomeText" />
+
+    <Button
+        android:id="@+id/btn_sendDataParcelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Send Data Using Parcelable"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sendDataSerializable"
+        app:layout_constraintStart_toStartOf="@+id/btn_sendDataSerializable"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sendDataSerializable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

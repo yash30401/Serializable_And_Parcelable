@@ -2,18 +2,18 @@ package com.devyash.serializableandparcelable
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.devyash.serializableandparcelable.databinding.ActivityGetDataBinding
 import com.devyash.serializableandparcelable.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class GetDataActivity : AppCompatActivity() {
 
-    private var _binding:ActivityMainBinding?=null
+    private var _binding: ActivityGetDataBinding?=null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        _binding = ActivityMainBinding.inflate(layoutInflater)
+        _binding = ActivityGetDataBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
 
     }
