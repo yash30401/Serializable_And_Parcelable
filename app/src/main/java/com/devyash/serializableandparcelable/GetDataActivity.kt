@@ -26,7 +26,7 @@ class GetDataActivity : AppCompatActivity() {
         getParcelableData()
     }
 
-
+    //Getting Data using Serializables
     private fun getSerializableData() {
 
         val person = bundle?.getSerializable("PERSON_S") as? PersonWithSerializable
@@ -40,6 +40,8 @@ class GetDataActivity : AppCompatActivity() {
 
     }
 
+
+    //Getting Data using Parcelables
     private fun getParcelableData(){
         val person = bundle?.getParcelable<PersonWithParcelable>("PERSON_P")
 

@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //Sending Data using Serializables
     private fun sendDataUsingSerializables() {
         val person = PersonWithSerializable(2, "Yashveer Singh", "Delhi", 20)
         val intent = Intent(this, GetDataActivity::class.java)
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    //Sending Data using Parcelables
     private fun sendDataUsingParcelable() {
         val person = PersonWithParcelable(1,"Yash","Noida",20)
         val intent = Intent(this, GetDataActivity::class.java)
